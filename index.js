@@ -7,8 +7,8 @@ function userListForm(){
         // console.log(userTextDisplay);
         
         $('ul').append(`<li>`+ `<div class="shopping-item">${userTextDisplay} </div>` 
-        +`<button><div class="shopping-item-toggle">check</div></button>` + " " 
-        + `<button><div class="shopping-item-delete">delete</div></button>`);
+        +`<button class="shopping-item-toggle">check</button>` + " " 
+        + `<button class="shopping-item-delete">delete</button>`);
              
     });
 
