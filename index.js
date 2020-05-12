@@ -3,8 +3,9 @@ function userListForm(){
  $("#js-shopping-list-form").submit(function(event){
     event.preventDefault();
     const userVal = $("#shopping-list-entry").val();
-    const outUser = `
-    <li>
+
+    $(".shopping-list").append(
+    `<li>
     <span class="shopping-item">${userVal}</span>
     <div class="shopping-item-controls">
       <button class="shopping-item-toggle">
@@ -15,9 +16,8 @@ function userListForm(){
        </button>
     </div>
   </li>
-    `;
+    `);
 
-    $("ul").append(outUser);
   });
 
    $(".shopping-list").on("click", ".shopping-item-toggle", function(e){
